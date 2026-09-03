@@ -1,0 +1,25 @@
+# Butterfly 主题配置
+
+# 网站名称
+site:
+  avatar: 
+  name: miracle
+
+# 顶部导航栏
+nav:
+  logo:
+  display_title: true
+  fixed: false
+
+# 首页
+index_img: 
+
+# 默认文章封面
+default_top_img:
+
+# 文章页
+post_meta:
+  date_type: created
+  date_format: YYYY-MM-DD
+  categories: true
+  tags: true
