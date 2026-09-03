@@ -3,6 +3,8 @@
 # 网站名称
 site:
   avatar: 
+  img: /img/avatar.png
+  effect: true
   name: miracle
 
 # 顶部导航栏
