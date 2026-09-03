@@ -2,10 +2,11 @@
 
 # 网站名称
 site:
-  avatar: 
-  img: /img/avatar.png
-  effect: true
+  avatar:
+    img: /img/avatar.png
+    effect: true
   name: miracle
+
 
 # 顶部导航栏
 nav:
@@ -13,11 +14,14 @@ nav:
   display_title: true
   fixed: false
 
+
 # 首页
-index_img: 
+index_img:
+
 
 # 默认文章封面
 default_top_img:
+
 
 # 文章页
 post_meta:
@@ -25,3 +29,8 @@ post_meta:
   date_format: YYYY-MM-DD
   categories: true
   tags: true
+
+
+#github
+social:
+  fab fa-github: https://github.com/miraclezznx
