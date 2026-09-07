@@ -27,3 +27,12 @@ post_meta:
 # GitHub
 social:
   fab fa-github: https://github.com/miraclezznx
+
+# 作者卡片
+aside:
+  card_author:
+    button:
+      enable: true
+      icon: fab fa-github
+      text: Follow Me
+      link: https://github.com/miraclezznx
