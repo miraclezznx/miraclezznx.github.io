@@ -1,0 +1,7 @@
+- class_name: 技术博客
+  class_desc: 一些优秀的技术博客
+  link_list:
+    - name: c01in
+      link: https://c01in.com/
+      avatar: https://c01in.com/images/logo.png
+      descr: 余虽不敏，亦望卒有所获

@@ -1,14 +1,13 @@
-/* 去除 Butterfly footer 蓝色背景 */
+/* ==========================================================================
+   Butterfly 主题自定义样式
+   ========================================================================== */
 
+/* 去除 Butterfly footer 蓝色背景 */
 #footer {
     background: transparent !important;
 }
 
-#footer::before {
-    content: none !important;
-    background: transparent !important;
-}
-
+#footer::before,
 #footer:before {
     content: none !important;
     background: transparent !important;
@@ -16,4 +15,86 @@
 
 #footer .footer-other {
     background: transparent !important;
+}
+
+/* 主题强调色（与 Butterfly 默认主题色 #49B1F5 保持一致） */
+:root {
+    --miracle-accent: #49b1f5;
+}
+
+/* ==========================================================================
+   友链卡片
+   ========================================================================== */
+.flink .flink-list-item {
+    border: 1px solid rgba(0, 0, 0, .05);
+    border-radius: 12px;
+    background: var(--card-bg);
+    box-shadow: 0 3px 8px 6px rgba(7, 17, 27, .04);
+    transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+}
+
+.flink .flink-list-item:hover {
+    border-color: var(--miracle-accent);
+    box-shadow: 0 10px 24px -6px rgba(73, 177, 245, .4);
+    transform: translateY(-4px);
+}
+
+/* 头像圆形化 */
+.flink .flink-item-icon {
+    border-radius: 50% !important;
+}
+
+.flink .flink-item-icon img {
+    border-radius: 50%;
+}
+
+/* 友链分组标题前的小圆点装饰 */
+.flink > h2::before {
+    display: inline-block;
+    margin-right: 6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--miracle-accent);
+    content: '';
+    vertical-align: middle;
+}
+
+/* ==========================================================================
+   首页 / 导航
+   ========================================================================== */
+
+/* 站点标题：增强字重与投影，更清晰 */
+#site-title {
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, .35);
+}
+
+/* 副标题 */
+#site-subtitle {
+    letter-spacing: 1px;
+}
+
+/* 导航菜单项悬停下划线改为主题色渐变动画 */
+#nav .menus_items .site-page:not(.child)::after {
+    background-image: linear-gradient(90deg, var(--miracle-accent), #00c4b6);
+}
+
+/* 滚动指示箭头呼吸动画 */
+#scroll-down .scroll-down-effects {
+    animation: miracle-float 1.6s ease-in-out infinite;
+}
+
+@keyframes miracle-float {
+    0%,
+    100% {
+        transform: translateY(0);
+        opacity: .9;
+    }
+
+    50% {
+        transform: translateY(8px);
+        opacity: .5;
+    }
 }
