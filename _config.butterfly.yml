@@ -36,6 +36,9 @@ aside:
       icon: fab fa-github
       text: Follow Me
       link: https://github.com/miraclezznx
+  card_announcement:
+    enable: true
+    content: 本站持续更新中，欢迎关注
 
 # 网站背景
 background: /img/background.jpg
