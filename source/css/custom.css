@@ -1,0 +1,19 @@
+/* 去除 Butterfly footer 蓝色背景 */
+
+#footer {
+    background: transparent !important;
+}
+
+#footer::before {
+    content: none !important;
+    background: transparent !important;
+}
+
+#footer:before {
+    content: none !important;
+    background: transparent !important;
+}
+
+#footer .footer-other {
+    background: transparent !important;
+}

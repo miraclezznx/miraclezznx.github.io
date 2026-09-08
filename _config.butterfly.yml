@@ -12,7 +12,7 @@ nav:
   fixed: false
 
 # 首页
-index_img:
+index_img: /img/background.jpg
 
 # 默认文章封面
 default_top_img:
@@ -36,3 +36,13 @@ aside:
       icon: fab fa-github
       text: Follow Me
       link: https://github.com/miraclezznx
+
+# 网站背景
+background: /img/background.jpg
+
+# 页脚背景
+footer_img: false
+
+inject:
+  head:
+    - '<link rel="stylesheet" href="/css/custom.css">'
