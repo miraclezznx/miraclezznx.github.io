@@ -20,6 +20,22 @@
 /* 主题强调色（与 Butterfly 默认主题色 #49B1F5 保持一致） */
 :root {
     --miracle-accent: #49b1f5;
+    /* 页面白色背景改为透明，露出星空背景图 */
+    --global-bg: transparent;
+    /* 滚动条滑块改为黑色 */
+    --scrollbar-color: #000000;
+}
+
+/* 页面最底层画布也设为黑色：
+   滚动条区域在星空图 #web_bg 的覆盖范围之外，
+   不设黑底的话会露出浏览器默认的白底 */
+html {
+    background-color: #000000 !important;
+}
+
+/* 右侧滚动条轨道（也就是滚轮那一块的背景）改为黑色 */
+*::-webkit-scrollbar-track {
+    background-color: #000000 !important;
 }
 
 /* ==========================================================================
